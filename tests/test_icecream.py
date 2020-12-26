@@ -289,7 +289,6 @@ class TestIceCream(unittest.TestCase):
             assert ic(1, 2, 3) == (1, 2, 3)
 
     def testDifferentName(self):
-        from icecream import ic as foo
         with disableColoring(), captureStandardStreams() as (out, err):
             foo()
         assert lineIsContextAndTime(err.getvalue())
