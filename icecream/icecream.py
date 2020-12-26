@@ -12,8 +12,6 @@
 #
 
 from __future__ import print_function
-
-import ast
 import inspect
 import pprint
 import sys
